@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CroquetteMoon Commissions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="indexcromoon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Opening Animation Overlay -->
+    <div id="opening-animation-overlay">
+      <div id="knob-wrapper">
+        <img id="knob-image" src="https://croquettemoon.carrd.co/assets/images/image02.jpg?v=7b82272d" alt="Loading Knob">
+      </div>
+    </div>
+
+    <!-- Fixed Header with Awning -->
+    <header id="site-header">
+      <div class="top-rod">
+        <div class="rod-detail"></div>
+        <div class="rod-detail"></div>
+        <div class="rod-detail"></div>
+        <div class="rod-detail"></div>
+        <div class="rod-detail"></div>
+        <div class="rod-detail"></div>
+        <div class="rod-detail"></div>
+        <div class="rod-detail"></div>
+      </div>
+
+      <div class="awning" id="awning">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+      </div>
+
+      <div class="logo-container">
+        <img src="https://croquettemoon.carrd.co/assets/images/image02.jpg?v=7b82272d" alt="CroquetteMoon Logo" />
+      </div>
+
+      <nav class="header-nav" id="header-nav">
+        <button id="home-btn" class="active" onclick="showSection('home')">Home</button>
+        <button id="types-btn" onclick="showSection('types')">Commissions</button>
+        <button id="gallery-btn" onclick="showSection('gallery')">Gallery</button>
+        <button id="tos-btn" onclick="showSection('tos')">TOS</button>
+      </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+      <section id="home" class="card active">
+        <div class="welcome-content">
+          <div class="welcome-left">
+            <h2>Welcome to CroquetteMoon</h2>
+            <p class="welcome-description">Digital Artist and Game Art student</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScZMbEmCtfeUFZcAxSfb3zxvlSoYhDoHzTbw_3Kz3CPezctcw/viewform" target="_blank" class="cta-button commission-btn">
+              commission me here!
+            </a>
+            <p class="status-text">Status: <strong>OPEN</strong></p>
+          </div>
+          <div class="intro-image">
+            <img src="https://croquettemoon.carrd.co/assets/images/image01.jpg?v=7b82272d" alt="Introductory Image" />
+          </div>
+        </div>
+        
+        <!-- Recent Works Section -->
+        <h2>Gallery</h2>
+        <div class="gallery-grid" id="recent-works">
+          <!-- Images will be populated here by JavaScript -->
+        </div>
+        <div style="text-align: center; margin-top: 1rem;">
+          <button class="cta-button" onclick="showSection('gallery')">See More Works</button>
+        </div>
+      </section>
+
+      <section id="types" class="card">
+        <h2>Commission Types & Rates</h2>
+
+        <div class="commission-card bust">
+          <h3>Bust Portrait</h3>
+          <div class="price">$45 | PHP 2500</div>
+          <div class="image-slots">
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery10/e5ec72c4.jpg?v=7b82272d" alt="Bust Portrait Example 1" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery10/7a57dc69.jpg?v=7b82272d" alt="Bust Portrait Example 2" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery10/10a46424.jpg?v=7b82272d" alt="Bust Portrait Example 3" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery11/9b9d180d.jpg?v=7b82272d" alt="Bust Portrait Example 4" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery11/070cf095.jpg?v=7b82272d" alt="Bust Portrait Example 5" />
+          </div>
+          <p>Simple bust with a solid background. Perfect for profile pictures and avatars.</p>
+        </div>
+
+        <div class="commission-card half-body">
+          <h3>Half-Body</h3>
+          <div class="price">$60 | PHP 3200</div>
+          <div class="image-slots">
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery12/13262c2f.jpg?v=7b82272d" alt="Half-Body Example 1" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery12/ea0618fe.jpg?v=7b82272d" alt="Half-Body Example 2" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery12/925ac8e9.jpg?v=7b82272d" alt="Half-Body Example 3" />
+          </div>
+          <p>Detailed half-body pose with more elaborate backgrounds and effects.</p>
+        </div>
+
+        <div class="commission-card chibi-detailed">
+          <h3>Chibi (Detailed)</h3>
+          <div class="price">$35 | PHP 2000</div>
+          <div class="image-slots">
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery02/72cccce0.jpg?v=7b82272d" alt="Chibi Detailed Example 1" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery02/dd30457e.jpg?v=7b82272d" alt="Chibi Detailed Example 2" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery02/98aab7f5.jpg?v=7b82272d" alt="Chibi Detailed Example 3" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery02/e3af3391.jpg?v=7b82272d" alt="Chibi Detailed Example 4" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery02/f34e07ee.jpg?v=7b82272d" alt="Chibi Detailed Example 5" />
+          </div>
+          <p>Detailed full-body chibi with props and simple background elements.</p>
+        </div>
+
+        <div class="commission-card chibi-simple">
+          <h3>Chibi (Simple)</h3>
+          <div class="price">$25 | PHP 1200</div>
+          <div class="image-slots">
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery14/03831f5e.jpg?v=7b82272d" alt="Chibi Simple Example 1" />
+            <img src="https://croquettemoon.carrd.co/assets/images/gallery14/e2dfe247.jpg?v=7b82272d" alt="Chibi Simple Example 2" />
+          </div>
+          <p>Simple full-body chibi with minimal background and details.</p>
+        </div>
+
+
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScZMbEmCtfeUFZcAxSfb3zxvlSoYhDoHzTbw_3Kz3CPezctcw/viewform" target="_blank" class="cta-button commission-btn">
+            <i class="fas fa-pencil-alt"></i> Request a Commission
+          </a>
+        </div>
+      </section>
+
+      <section id="gallery" class="card">
+        <h2>Gallery</h2>
+        <p>Commissions and personal artworks</p>
+        
+        <!-- Gallery Filters -->
+        <div class="gallery-filters">
+          <button class="filter-btn all active" data-filter="all">All</button>
+          <button class="filter-btn bust" data-filter="bust">Bust</button>
+          <button class="filter-btn half-body" data-filter="half-body">Half-Body</button>
+          <button class="filter-btn chibi-detailed" data-filter="chibi-detailed">Chibi Detailed</button>
+          <button class="filter-btn chibi-simple" data-filter="chibi-simple">Chibi Simple</button>
+          <button class="filter-btn portrait" data-filter="portrait">Portrait</button>
+          <button class="filter-btn landscape" data-filter="landscape">Landscape</button>
+        </div>
+
+        <div class="gallery-grid" id="full-gallery">
+          <!-- Gallery items will be populated by JavaScript -->
+        </div>
+      </section>
+
+      <section id="tos" class="card">
+        <h2>Terms of Service</h2>
+        
+        <div class="tos-section">
+          <div>
+            <h3><i class="fas fa-file-contract"></i> Usage Rights</h3>
+            <ul>
+              <li>For personal use only unless commercial rights are purchased.</li>
+              <li>Watermarking required unless otherwise agreed.</li>
+              <li>No resale, NFT, AI training, or unauthorized edits.</li>
+              <li>I retain all intellectual property rights to the artwork.</li>
+              <li>You may display the commissioned artwork on social media with proper credit.</li>
+            </ul>
+            
+            <h3><i class="fas fa-edit"></i> Revision Policy</h3>
+            <ul>
+              <li>Up to 3 minor revisions included.</li>
+              <li>Major changes after approval may incur additional fees.</li>
+              <li>Please request updates respectfully (no spamming).</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3><i class="fas fa-money-bill-wave"></i> Payment Info</h3>
+            <ul>
+              <li>100% payment after sketch approval.</li>
+              <li>Payment via <strong>GCash</strong> (PHP) or <strong>PayPal</strong> (USD) — +2.5% fee.</li>
+              <li>No refunds after lineart phase.</li>
+              <li>Prices subject to change depending on demand.</li>
+            </ul>
+            
+            <h3><i class="fas fa-info-circle"></i> Other Terms</h3>
+            <ul>
+              <li>I can decline commissions I'm not comfortable with.</li>
+              <li>Completion times are estimates and may vary.</li>
+              <li>Communication is key - please respond within 3 days.</li>
+              <li>By commissioning me, you agree to these terms.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScZMbEmCtfeUFZcAxSfb3zxvlSoYhDoHzTbw_3Kz3CPezctcw/viewform" target="_blank" class="cta-button">
+            <i class="fas fa-pencil-alt"></i> Request a Commission
+          </a>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Lightbox for Gallery Images -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close">&times;</button>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-nav">
+          <button class="lightbox-prev">&#8249;</button>
+          <button class="lightbox-next">&#8250;</button>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" target="_blank" aria-label="Bluesky">
+          <svg viewBox="-50 -50 430 390" aria-hidden="true" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M180 141.964C163.699 110.262 119.308 51.1817 78.0347 22.044C38.4971 -5.86834 23.414 -1.03207 13.526 3.43594C2.08093 8.60755 0 26.1785 0 36.5164C0 46.8542 5.66748 121.272 9.36416 133.694C21.5786 174.738 65.0603 188.607 105.104 184.156C107.151 183.852 109.227 183.572 111.329 183.312C109.267 183.642 107.19 183.924 105.104 184.156C46.4204 192.847 -5.69621 214.233 62.6582 290.33C137.848 368.18 165.705 273.637 180 225.702C194.295 273.637 210.76 364.771 295.995 290.33C360 225.702 313.58 192.85 254.896 184.158C252.81 183.926 250.733 183.645 248.671 183.315C250.773 183.574 252.849 183.855 254.896 184.158C294.94 188.61 338.421 174.74 350.636 133.697C354.333 121.275 360 46.8568 360 36.519C360 26.1811 357.919 8.61012 346.474 3.43851C336.586 -1.02949 321.503 -5.86576 281.965 22.0466C240.692 51.1843 196.301 110.262 180 141.964Z"></path>
+          </svg>
+        </a>
+      </div>
+      <p></p>
+    </footer>
+
+    <!-- Terms of Service Modal -->
+    <div id="tos-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-tos-btn">&times;</span>
+        <h2>Terms of Service</h2>
+        <div class="tos-content">
+          <div>
+            <h3><i class="fas fa-file-contract"></i> Usage Rights</h3>
+            <ul>
+              <li>For personal use only unless commercial rights are purchased.</li>
+              <li>Watermarking required unless otherwise agreed.</li>
+              <li>No resale, NFT, AI training, or unauthorized edits.</li>
+              <li>I retain all intellectual property rights to the artwork.</li>
+              <li>You may display the commissioned artwork on social media with proper credit.</li>
+            </ul>
+            
+            <h3><i class="fas fa-edit"></i> Revision Policy</h3>
+            <ul>
+              <li>Up to 3 minor revisions included.</li>
+              <li>Major changes after approval may incur additional fees.</li>
+              <li>Please request updates respectfully (no spamming).</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3><i class="fas fa-money-bill-wave"></i> Payment Info</h3>
+            <ul>
+              <li>100% payment after sketch approval.</li>
+              <li>Payment via <strong>GCash</strong> (PHP) or <strong>PayPal</strong> (USD) — +2.5% fee.</li>
+              <li>No refunds after lineart phase.</li>
+              <li>Prices subject to change depending on demand.</li>
+            </ul>
+            
+            <h3><i class="fas fa-info-circle"></i> Other Terms</h3>
+            <ul>
+              <li>I can decline commissions I'm not comfortable with.</li>
+              <li>Completion times are estimates and may vary.</li>
+              <li>Communication is key - please respond within 3 days.</li>
+              <li>By commissioning me, you agree to these terms.</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="modal-actions">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScZMbEmCtfeUFZcAxSfb3zxvlSoYhDoHzTbw_3Kz3CPezctcw/viewform" target="_blank" class="btn accept-btn">Accept</a>
+          <button class="btn reject-btn" id="reject-tos-btn">Reject</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Gallery data with all artworks including commission examples
+      const allArtworks = [
+        // Bust portraits
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery10/e5ec72c4.jpg?v=7b82272d", category: "bust", alt: "Bust Portrait 1" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery10/7a57dc69.jpg?v=7b82272d", category: "bust", alt: "Bust Portrait 2" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery10/10a46424.jpg?v=7b82272d", category: "bust", alt: "Bust Portrait 3" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery11/9b9d180d.jpg?v=7b82272d", category: "bust", alt: "Bust Portrait 4" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery11/070cf095.jpg?v=7b82272d", category: "bust", alt: "Bust Portrait 5" },
+        
+        // Half-body
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery12/13262c2f.jpg?v=7b82272d", category: "half-body", alt: "Half-Body 1" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery12/ea0618fe.jpg?v=7b82272d", category: "half-body", alt: "Half-Body 2" },
+        
+        // Chibi detailed
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery02/72cccce0.jpg?v=7b82272d", category: "chibi-detailed", alt: "Chibi Detailed 1" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery02/dd30457e.jpg?v=7b82272d", category: "chibi-detailed", alt: "Chibi Detailed 2" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery12/925ac8e9.jpg?v=7b82272d", category: "chibi-detailed", alt: "Chibi Detailed 3" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery02/e3af3391.jpg?v=7b82272d", category: "chibi-detailed", alt: "Chibi Detailed 4" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery02/f34e07ee.jpg?v=7b82272d", category: "chibi-detailed", alt: "Chibi Detailed 5" },
+        
+        // Chibi simple
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery14/03831f5e.jpg?v=7b82272d", category: "chibi-simple", alt: "Chibi Simple 1" },
+        { src: "https://croquettemoon.carrd.co/assets/images/gallery14/e2dfe247.jpg?v=7b82272d", category: "chibi-simple", alt: "Chibi Simple 2" },
+        
+ 
+      ];
+
+      let currentFilter = 'all';
+      let currentLightboxIndex = 0;
+      let filteredArtworks = [];
+
+      // Function to remove the opening animation overlay
+      function removeOverlay() {
+        const overlay = document.getElementById('opening-animation-overlay');
+        if (!overlay) return;
+        
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+          if (overlay.parentNode) {
+            overlay.parentNode.removeChild(overlay);
+          }
+        }, 1000);
+      }
+
+      // Navigation functionality
+      function showSection(id) {
+        document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        
+        document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+        document.getElementById(id + '-btn').classList.add('active');
+        
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        
+        // Refresh gallery when switching to gallery section
+        if (id === 'gallery') {
+          displayGallery();
+        }
+      }
+
+      // Display recent works on home page
+      function displayRecentWorks() {
+        const recentWorksContainer = document.getElementById('recent-works');
+        if (!recentWorksContainer) return;
+        
+        recentWorksContainer.innerHTML = '';
+        const recentWorks = allArtworks.slice(0, 8).sort(() => 0.5 - Math.random());
+
+        recentWorks.forEach((artwork, index) => {
+          const item = document.createElement('div');
+          item.className = `gallery-item ${artwork.category}`;
+          
+          const aspectClass = artwork.category === 'portrait' ? 'portrait' : 
+                             artwork.category === 'landscape' ? 'landscape' : '';
+          
+          item.innerHTML = `
+            <img src="${artwork.src}" alt="${artwork.alt}" onclick="openLightbox(${allArtworks.indexOf(artwork)})">
+            <div class="tag ${artwork.category}">${artwork.category.replace('-', ' ')}</div>
+          `;
+          
+          if (aspectClass) {
+            item.classList.add(aspectClass);
+          }
+          
+          recentWorksContainer.appendChild(item);
+        });
+      }
+
+      // Display full gallery with filters
+      function displayGallery() {
+        const galleryContainer = document.getElementById('full-gallery');
+        if (!galleryContainer) return;
+        
+        filteredArtworks = currentFilter === 'all' ? 
+          allArtworks : 
+          allArtworks.filter(artwork => artwork.category === currentFilter);
+        
+        galleryContainer.innerHTML = '';
+        
+        filteredArtworks.forEach((artwork, index) => {
+          const item = document.createElement('div');
+          item.className = `gallery-item ${artwork.category}`;
+          
+          const aspectClass = artwork.category === 'portrait' ? 'portrait' : 
+                             artwork.category === 'landscape' ? 'landscape' : '';
+          
+          item.innerHTML = `
+            <img src="${artwork.src}" alt="${artwork.alt}" onclick="openLightbox(${allArtworks.indexOf(artwork)})">
+            <div class="tag ${artwork.category}">${artwork.category.replace('-', ' ')}</div>
+          `;
+          
+          if (aspectClass) {
+            item.classList.add(aspectClass);
+          }
+          
+          galleryContainer.appendChild(item);
+        });
+      }
+
+      // Gallery filter functionality
+      function setupGalleryFilters() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            currentFilter = this.getAttribute('data-filter');
+            displayGallery();
+          });
+        });
+      }
+
+      // Lightbox functionality
+      function openLightbox(index) {
+        currentLightboxIndex = index;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        
+        lightboxImage.src = allArtworks[index].src;
+        lightboxImage.alt = allArtworks[index].alt;
+        lightbox.classList.add('active');
+        
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+
+      function nextImage() {
+        currentLightboxIndex = (currentLightboxIndex + 1) % allArtworks.length;
+        updateLightboxImage();
+      }
+
+      function prevImage() {
+        currentLightboxIndex = (currentLightboxIndex - 1 + allArtworks.length) % allArtworks.length;
+        updateLightboxImage();
+      }
+
+      function updateLightboxImage() {
+        const lightboxImage = document.querySelector('.lightbox-image');
+        lightboxImage.src = allArtworks[currentLightboxIndex].src;
+        lightboxImage.alt = allArtworks[currentLightboxIndex].alt;
+      }
+
+      // Setup lightbox event listeners
+      function setupLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        const closeBtn = document.querySelector('.lightbox-close');
+        const prevBtn = document.querySelector('.lightbox-prev');
+        const nextBtn = document.querySelector('.lightbox-next');
+        
+        if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+        if (prevBtn) prevBtn.addEventListener('click', prevImage);
+        if (nextBtn) nextBtn.addEventListener('click', nextImage);
+        
+        if (lightbox) {
+          lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+              closeLightbox();
+            }
+          });
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+          if (lightbox && lightbox.classList.contains('active')) {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'ArrowRight') nextImage();
+          }
+        });
+      }
+
+      // Enhanced image slot interactions
+      function setupImageSlotClicks() {
+        document.querySelectorAll('.image-slots img').forEach((img, index) => {
+          img.addEventListener('click', function() {
+            const src = this.src;
+            const matchingArtwork = allArtworks.findIndex(artwork => artwork.src === src);
+            if (matchingArtwork !== -1) {
+              openLightbox(matchingArtwork);
+            }
+          });
+        });
+      }
+
+      // Initialize everything
+      window.onload = function() {
+        setTimeout(removeOverlay, 1000);
+        displayRecentWorks();
+        displayGallery();
+        setupGalleryFilters();
+        setupLightbox();
+        setupImageSlotClicks();
+
+        // Logo jiggle effect
+        const logoImage = document.querySelector('.logo-container img');
+        if (logoImage) {
+          logoImage.addEventListener('click', function() {
+            this.style.animation = 'jiggle 0.5s ease';
+            setTimeout(() => {
+              this.style.animation = '';
+            }, 500);
+            
+            const body = document.body;
+            if (body.style.cursor === 'url(https://custom-cursor.com/en/collection/minimal-style/minimal-croissant), auto') {
+              body.style.cursor = 'auto';
+            } else {
+              body.style.cursor = 'url(https://custom-cursor.com/en/collection/minimal-style/minimal-croissant), auto';
+            }
+          });
+        }
+
+        // Modal controls
+        const commissionBtns = document.querySelectorAll('.commission-btn');
+        const tosModal = document.getElementById('tos-modal');
+        
+        if (commissionBtns.length > 0 && tosModal) {
+          commissionBtns.forEach(btn => {
+            btn.addEventListener('click', function(event) {
+              event.preventDefault();
+              tosModal.style.display = 'block';
+            });
+          });
+        }
+
+        const closeBtn = document.getElementById('close-tos-btn');
+        const rejectBtn = document.getElementById('reject-tos-btn');
+        
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function() {
+            tosModal.style.display = 'none';
+          });
+        }
+        
+        if (rejectBtn) {
+          rejectBtn.addEventListener('click', function() {
+            tosModal.style.display = 'none';
+          });
+        }
+        
+        window.addEventListener('click', function(event) {
+          if (event.target == tosModal) {
+            tosModal.style.display = 'none';
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
